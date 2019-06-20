@@ -107,6 +107,7 @@ namespace Esx_Deliveries_Client
             dynamic blip = AddBlipForCoord(m_baselocation_coords.X, m_baselocation_coords.Y, m_baselocation_coords.Z);
             SetBlipSprite(blip, 85);
             SetBlipColour(blip, 5);
+            SetBlipAsShortRange(blip, true)
             BeginTextCommandSetBlipName("STRING");
             AddTextComponentString("Deliveries Hub");
             EndTextCommandSetBlipName(blip);
